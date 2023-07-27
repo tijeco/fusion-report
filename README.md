@@ -46,6 +46,7 @@ fusion_report download --cosmic_usr '<username>' --cosmic_passwd '<password>' /p
 
 # Run the fusion-report
 fusion_report run "<SAMPLE NAME>" /path/to/output /path/to/db/ \
+  --use_mitelman true --use_fusiongdb true --use_fusiongdb2 true \
   --arriba tests/test_data/arriba.tsv \
   --dragen tests/test_data/dragen.tsv \
   --ericscript tests/test_data/ericscript.tsv \
@@ -56,6 +57,8 @@ fusion_report run "<SAMPLE NAME>" /path/to/output /path/to/db/ \
   --jaffa tests/test_data/jaffa.csv \
   --allow-multiple-gene-symbols # in case gene symbol in fusion can't be determined, treat each provided fusion as a separate one.
 ```
+
+
 
 Or get help and list all possible parameters.
 
